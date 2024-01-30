@@ -15,7 +15,10 @@
 		5720B7802B68D50300F3BD36 /* VirtualCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B77F2B68D50300F3BD36 /* VirtualCurrencyUITests.swift */; };
 		5720B7822B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */; };
 		57E564102B68D959004DB0BF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 57E5640F2B68D959004DB0BF /* .gitignore */; };
+		57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */; };
+		57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69132B6BA75900E57F96 /* NetworkBase.swift */; };
 		57FD69172B6BAB7300E57F96 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 57FD69162B6BAB7300E57F96 /* Moya */; };
+		57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69412B6E0FF600E57F96 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		5720B77F2B68D50300F3BD36 /* VirtualCurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyUITests.swift; sourceTree = "<group>"; };
 		5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57E5640F2B68D959004DB0BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		57FD69132B6BA75900E57F96 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
+		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,31 @@
 				5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */,
 			);
 			path = VirtualCurrencyUITests;
+			sourceTree = "<group>";
+		};
+		572D091D2B7A93FC00451BB1 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */,
+				57FD69412B6E0FF600E57F96 /* NetworkError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		57FD690E2B6B8B4600E57F96 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				57FD69132B6BA75900E57F96 /* NetworkBase.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		57FD693F2B6E0F2800E57F96 /* Infrastructures */ = {
+			isa = PBXGroup;
+			children = (
+				572D091D2B7A93FC00451BB1 /* Network */,
+			);
+			path = Infrastructures;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,6 +302,9 @@
 			files = (
 				5720B7672B68D4FD00F3BD36 /* ContentView.swift in Sources */,
 				5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */,
+				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
+				57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */,
+				57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
