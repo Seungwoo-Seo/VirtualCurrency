@@ -15,6 +15,7 @@
 		5720B7802B68D50300F3BD36 /* VirtualCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B77F2B68D50300F3BD36 /* VirtualCurrencyUITests.swift */; };
 		5720B7822B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */; };
 		57E564102B68D959004DB0BF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 57E5640F2B68D959004DB0BF /* .gitignore */; };
+		57FD69172B6BAB7300E57F96 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 57FD69162B6BAB7300E57F96 /* Moya */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FD69172B6BAB7300E57F96 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = VirtualCurrency;
+			packageProductDependencies = (
+				57FD69162B6BAB7300E57F96 /* Moya */,
+			);
 			productName = VirtualCurrency;
 			productReference = 5720B7612B68D4FD00F3BD36 /* VirtualCurrency.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 5720B7582B68D4FD00F3BD36;
+			packageReferences = (
+				57FD69152B6BAB7300E57F96 /* XCRemoteSwiftPackageReference "Moya" */,
+			);
 			productRefGroup = 5720B7622B68D4FD00F3BD36 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -587,6 +595,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		57FD69152B6BAB7300E57F96 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		57FD69162B6BAB7300E57F96 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 57FD69152B6BAB7300E57F96 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5720B7592B68D4FD00F3BD36 /* Project object */;
 }
