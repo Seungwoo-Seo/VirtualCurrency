@@ -52,6 +52,7 @@
 		5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57E5640F2B68D959004DB0BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		57FCD3A22B77CD6E006C22C5 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		57FD69132B6BA75900E57F96 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
 		57FD69182B6BADD200E57F96 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57FD69172B6BAB7300E57F96 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +78,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				57FD69172B6BAB7300E57F96 /* Moya in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,11 +107,15 @@
 		5720B7632B68D4FD00F3BD36 /* VirtualCurrency */ = {
 			isa = PBXGroup;
 			children = (
-				5720B7642B68D4FD00F3BD36 /* VirtualCurrencyApp.swift */,
-				5720B7662B68D4FD00F3BD36 /* ContentView.swift */,
-				5720B7682B68D50200F3BD36 /* Assets.xcassets */,
-				57E5640F2B68D959004DB0BF /* .gitignore */,
+				57573EC22B78B39C007D66C7 /* Application */,
+				57FD692E2B6CDA3F00E57F96 /* Presentation */,
+				57FD691D2B6BB2EA00E57F96 /* Domain */,
+				57FD690C2B6B8B3400E57F96 /* Data */,
+				57FD693F2B6E0F2800E57F96 /* Infrastructures */,
+				57573EC12B78B38E007D66C7 /* Resource */,
 				5720B76A2B68D50200F3BD36 /* Preview Content */,
+				57FCD3A22B77CD6E006C22C5 /* info.plist */,
+				57E5640F2B68D959004DB0BF /* .gitignore */,
 			);
 			path = VirtualCurrency;
 			sourceTree = "<group>";
@@ -148,6 +153,14 @@
 				57FD69412B6E0FF600E57F96 /* NetworkError.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		57573EC12B78B38E007D66C7 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				5720B7682B68D50200F3BD36 /* Assets.xcassets */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		57FD690E2B6B8B4600E57F96 /* Router */ = {
@@ -470,6 +483,7 @@
 				DEVELOPMENT_TEAM = 86BUJA8T6M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/seoseungwoo/Documents/Portfolio/VirtualCurrency/VirtualCurrency/info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -499,6 +513,7 @@
 				DEVELOPMENT_TEAM = 86BUJA8T6M;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = /Users/seoseungwoo/Documents/Portfolio/VirtualCurrency/VirtualCurrency/info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
