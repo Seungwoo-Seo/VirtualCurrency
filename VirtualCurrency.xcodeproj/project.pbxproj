@@ -23,6 +23,7 @@
 		57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69182B6BADD200E57F96 /* HTTPManager.swift */; };
 		57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */; };
 		57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */; };
+		57FD69242B6CBECB00E57F96 /* MarketDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */; };
 		57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69332B6D0A1800E57F96 /* TickerRequest.swift */; };
 		57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69412B6E0FF600E57F96 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
@@ -65,6 +66,7 @@
 		57FD69182B6BADD200E57F96 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
 		57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketDTO+Mapping.swift"; sourceTree = "<group>"; };
 		57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerDTO+Mapping.swift"; sourceTree = "<group>"; };
+		57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataSource.swift; sourceTree = "<group>"; };
 		57FD69332B6D0A1800E57F96 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
 		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +237,14 @@
 			path = Entities;
 			sourceTree = "<group>";
 		};
+		57FD69222B6CBEAF00E57F96 /* DataSources */ = {
+			isa = PBXGroup;
+			children = (
+				57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */,
+			);
+			path = DataSources;
+			sourceTree = "<group>";
+		};
 		57FD692A2B6CD36C00E57F96 /* Requests */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +403,7 @@
 				57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */,
 				57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */,
 				570AAB882B7662E800239DB4 /* Market.swift in Sources */,
+				57FD69242B6CBECB00E57F96 /* MarketDataSource.swift in Sources */,
 				57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */,
 				5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */,
 				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
