@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570AAB822B76517600239DB4 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB812B76517600239DB4 /* Ticker.swift */; };
+		570AAB882B7662E800239DB4 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB872B7662E800239DB4 /* Market.swift */; };
 		5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7642B68D4FD00F3BD36 /* VirtualCurrencyApp.swift */; };
 		5720B7672B68D4FD00F3BD36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7662B68D4FD00F3BD36 /* ContentView.swift */; };
 		5720B7692B68D50200F3BD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5720B7682B68D50200F3BD36 /* Assets.xcassets */; };
@@ -19,6 +21,9 @@
 		57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69132B6BA75900E57F96 /* NetworkBase.swift */; };
 		57FD69172B6BAB7300E57F96 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 57FD69162B6BAB7300E57F96 /* Moya */; };
 		57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69182B6BADD200E57F96 /* HTTPManager.swift */; };
+		57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */; };
+		57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */; };
+		57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69332B6D0A1800E57F96 /* TickerRequest.swift */; };
 		57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69412B6E0FF600E57F96 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
@@ -40,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		570AAB812B76517600239DB4 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
+		570AAB872B7662E800239DB4 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		5720B7612B68D4FD00F3BD36 /* VirtualCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5720B7642B68D4FD00F3BD36 /* VirtualCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyApp.swift; sourceTree = "<group>"; };
 		5720B7662B68D4FD00F3BD36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -53,8 +60,12 @@
 		57E5640F2B68D959004DB0BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		57FCD3A22B77CD6E006C22C5 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
+		57FD69112B6BA73800E57F96 /* QuotationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationRouter.swift; sourceTree = "<group>"; };
 		57FD69132B6BA75900E57F96 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
 		57FD69182B6BADD200E57F96 /* HTTPManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPManager.swift; sourceTree = "<group>"; };
+		57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketDTO+Mapping.swift"; sourceTree = "<group>"; };
+		57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerDTO+Mapping.swift"; sourceTree = "<group>"; };
+		57FD69332B6D0A1800E57F96 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
 		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -155,6 +166,15 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		572D091F2B7BE69E00451BB1 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */,
+				57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
 		57573EC12B78B38E007D66C7 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,12 +183,64 @@
 			path = Resource;
 			sourceTree = "<group>";
 		};
+		57FD690C2B6B8B3400E57F96 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				57FD690D2B6B8B3E00E57F96 /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		57FD690D2B6B8B3E00E57F96 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				57FD690E2B6B8B4600E57F96 /* Router */,
+				57FD691C2B6BB29D00E57F96 /* Mapping */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		57FD690E2B6B8B4600E57F96 /* Router */ = {
 			isa = PBXGroup;
 			children = (
 				57FD69132B6BA75900E57F96 /* NetworkBase.swift */,
+				57FD69112B6BA73800E57F96 /* QuotationRouter.swift */,
 			);
 			path = Router;
+			sourceTree = "<group>";
+		};
+		57FD691C2B6BB29D00E57F96 /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				57FD692A2B6CD36C00E57F96 /* Requests */,
+				572D091F2B7BE69E00451BB1 /* Responses */,
+			);
+			path = Mapping;
+			sourceTree = "<group>";
+		};
+		57FD691D2B6BB2EA00E57F96 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				57FD69202B6C307700E57F96 /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		57FD69202B6C307700E57F96 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				570AAB872B7662E800239DB4 /* Market.swift */,
+				570AAB812B76517600239DB4 /* Ticker.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		57FD692A2B6CD36C00E57F96 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				57FD69332B6D0A1800E57F96 /* TickerRequest.swift */,
+			);
+			path = Requests;
 			sourceTree = "<group>";
 		};
 		57FD693F2B6E0F2800E57F96 /* Infrastructures */ = {
@@ -318,10 +390,16 @@
 			files = (
 				5720B7672B68D4FD00F3BD36 /* ContentView.swift in Sources */,
 				57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */,
+				57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */,
+				57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */,
+				570AAB882B7662E800239DB4 /* Market.swift in Sources */,
+				57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */,
 				5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */,
 				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
+				57FD69122B6BA73800E57F96 /* QuotationRouter.swift in Sources */,
 				57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */,
 				57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */,
+				570AAB822B76517600239DB4 /* Ticker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
