@@ -24,6 +24,7 @@
 		57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */; };
 		57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */; };
 		57FD69242B6CBECB00E57F96 /* MarketDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */; };
+		57FD69292B6CC89000E57F96 /* TickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69282B6CC89000E57F96 /* TickerDataSource.swift */; };
 		57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69332B6D0A1800E57F96 /* TickerRequest.swift */; };
 		57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69412B6E0FF600E57F96 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MarketDTO+Mapping.swift"; sourceTree = "<group>"; };
 		57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TickerDTO+Mapping.swift"; sourceTree = "<group>"; };
 		57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataSource.swift; sourceTree = "<group>"; };
+		57FD69282B6CC89000E57F96 /* TickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDataSource.swift; sourceTree = "<group>"; };
 		57FD69332B6D0A1800E57F96 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
 		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -241,6 +243,7 @@
 			isa = PBXGroup;
 			children = (
 				57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */,
+				57FD69282B6CC89000E57F96 /* TickerDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -406,6 +409,7 @@
 				57FD69242B6CBECB00E57F96 /* MarketDataSource.swift in Sources */,
 				57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */,
 				5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */,
+				57FD69292B6CC89000E57F96 /* TickerDataSource.swift in Sources */,
 				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
 				57FD69122B6BA73800E57F96 /* QuotationRouter.swift in Sources */,
 				57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */,
