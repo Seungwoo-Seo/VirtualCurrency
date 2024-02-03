@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		570AAB722B733FC100239DB4 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB712B733FC100239DB4 /* ViewModelable.swift */; };
 		570AAB822B76517600239DB4 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB812B76517600239DB4 /* Ticker.swift */; };
 		570AAB882B7662E800239DB4 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB872B7662E800239DB4 /* Market.swift */; };
 		5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7642B68D4FD00F3BD36 /* VirtualCurrencyApp.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		570AAB712B733FC100239DB4 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
 		570AAB812B76517600239DB4 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		570AAB872B7662E800239DB4 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
 		5720B7612B68D4FD00F3BD36 /* VirtualCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -209,6 +211,14 @@
 				5720B7682B68D50200F3BD36 /* Assets.xcassets */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		57FCD3872B7673FE006C22C5 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				570AAB712B733FC100239DB4 /* ViewModelable.swift */,
+			);
+			path = Utility;
 			sourceTree = "<group>";
 		};
 		57FD690C2B6B8B3400E57F96 /* Data */ = {
@@ -451,6 +461,7 @@
 				57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */,
 				57FD69442B6E152200E57F96 /* VirtualCurrencyRepository.swift in Sources */,
 				57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */,
+				570AAB722B733FC100239DB4 /* ViewModelable.swift in Sources */,
 				57FD693E2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift in Sources */,
 				57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */,
 				570AAB882B7662E800239DB4 /* Market.swift in Sources */,
