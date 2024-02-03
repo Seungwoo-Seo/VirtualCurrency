@@ -18,8 +18,10 @@
 		5720B7802B68D50300F3BD36 /* VirtualCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B77F2B68D50300F3BD36 /* VirtualCurrencyUITests.swift */; };
 		5720B7822B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */; };
 		57573EBA2B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */; };
+		57E30A692B83784600CECF1F /* WebSocketUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E30A682B83784600CECF1F /* WebSocketUseCase.swift */; };
 		57E564102B68D959004DB0BF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 57E5640F2B68D959004DB0BF /* .gitignore */; };
 		57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */; };
+		57FCD3922B776D67006C22C5 /* RealtimeTickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */; };
 		57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69132B6BA75900E57F96 /* NetworkBase.swift */; };
 		57FD69172B6BAB7300E57F96 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 57FD69162B6BAB7300E57F96 /* Moya */; };
 		57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69182B6BADD200E57F96 /* HTTPManager.swift */; };
@@ -66,8 +68,10 @@
 		5720B77F2B68D50300F3BD36 /* VirtualCurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyUITests.swift; sourceTree = "<group>"; };
 		5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyRepositoryProtocol.swift; sourceTree = "<group>"; };
+		57E30A682B83784600CECF1F /* WebSocketUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketUseCase.swift; sourceTree = "<group>"; };
 		57E5640F2B68D959004DB0BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
+		57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeTickerInteractor.swift; sourceTree = "<group>"; };
 		57FCD3A22B77CD6E006C22C5 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		57FD69112B6BA73800E57F96 /* QuotationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationRouter.swift; sourceTree = "<group>"; };
 		57FD69132B6BA75900E57F96 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
@@ -221,6 +225,15 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
+		57FCD3902B76B343006C22C5 /* RealtimeUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				57E30A682B83784600CECF1F /* WebSocketUseCase.swift */,
+				57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */,
+			);
+			path = RealtimeUseCase;
+			sourceTree = "<group>";
+		};
 		57FD690C2B6B8B3400E57F96 /* Data */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +295,7 @@
 			isa = PBXGroup;
 			children = (
 				57FD693D2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift */,
+				57FCD3902B76B343006C22C5 /* RealtimeUseCase */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -470,8 +484,10 @@
 				57573EBA2B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift in Sources */,
 				5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */,
 				57FD69292B6CC89000E57F96 /* TickerDataSource.swift in Sources */,
+				57FCD3922B776D67006C22C5 /* RealtimeTickerInteractor.swift in Sources */,
 				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
 				57FD69122B6BA73800E57F96 /* QuotationRouter.swift in Sources */,
+				57E30A692B83784600CECF1F /* WebSocketUseCase.swift in Sources */,
 				57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */,
 				57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */,
 				570AAB822B76517600239DB4 /* Ticker.swift in Sources */,
