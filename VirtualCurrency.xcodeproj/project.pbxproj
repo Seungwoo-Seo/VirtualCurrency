@@ -26,6 +26,7 @@
 		57FD69242B6CBECB00E57F96 /* MarketDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */; };
 		57FD69292B6CC89000E57F96 /* TickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69282B6CC89000E57F96 /* TickerDataSource.swift */; };
 		57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69332B6D0A1800E57F96 /* TickerRequest.swift */; };
+		57FD693C2B6E0A9E00E57F96 /* VirtualCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */; };
 		57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69412B6E0FF600E57F96 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +71,7 @@
 		57FD69232B6CBECB00E57F96 /* MarketDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketDataSource.swift; sourceTree = "<group>"; };
 		57FD69282B6CC89000E57F96 /* TickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDataSource.swift; sourceTree = "<group>"; };
 		57FD69332B6D0A1800E57F96 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
+		57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrency.swift; sourceTree = "<group>"; };
 		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -233,6 +235,7 @@
 		57FD69202B6C307700E57F96 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
+				57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */,
 				570AAB872B7662E800239DB4 /* Market.swift */,
 				570AAB812B76517600239DB4 /* Ticker.swift */,
 			);
@@ -402,6 +405,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5720B7672B68D4FD00F3BD36 /* ContentView.swift in Sources */,
+				57FD693C2B6E0A9E00E57F96 /* VirtualCurrency.swift in Sources */,
 				57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */,
 				57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */,
 				57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */,
