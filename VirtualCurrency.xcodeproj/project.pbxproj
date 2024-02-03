@@ -28,6 +28,7 @@
 		57FD69292B6CC89000E57F96 /* TickerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69282B6CC89000E57F96 /* TickerDataSource.swift */; };
 		57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69332B6D0A1800E57F96 /* TickerRequest.swift */; };
 		57FD693C2B6E0A9E00E57F96 /* VirtualCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */; };
+		57FD693E2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD693D2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift */; };
 		57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69412B6E0FF600E57F96 /* NetworkError.swift */; };
 		57FD69442B6E152200E57F96 /* VirtualCurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69432B6E152200E57F96 /* VirtualCurrencyRepository.swift */; };
 /* End PBXBuildFile section */
@@ -75,6 +76,7 @@
 		57FD69282B6CC89000E57F96 /* TickerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerDataSource.swift; sourceTree = "<group>"; };
 		57FD69332B6D0A1800E57F96 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
 		57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrency.swift; sourceTree = "<group>"; };
+		57FD693D2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyInteractor.swift; sourceTree = "<group>"; };
 		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		57FD69432B6E152200E57F96 /* VirtualCurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -250,6 +252,7 @@
 			isa = PBXGroup;
 			children = (
 				57FD69202B6C307700E57F96 /* Entities */,
+				57FD69212B6C345A00E57F96 /* UseCases */,
 				57573EB82B78B2E4007D66C7 /* Interfaces */,
 			);
 			path = Domain;
@@ -263,6 +266,14 @@
 				570AAB812B76517600239DB4 /* Ticker.swift */,
 			);
 			path = Entities;
+			sourceTree = "<group>";
+		};
+		57FD69212B6C345A00E57F96 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				57FD693D2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 		57FD69222B6CBEAF00E57F96 /* DataSources */ = {
@@ -440,6 +451,7 @@
 				57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */,
 				57FD69442B6E152200E57F96 /* VirtualCurrencyRepository.swift in Sources */,
 				57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */,
+				57FD693E2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift in Sources */,
 				57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */,
 				570AAB882B7662E800239DB4 /* Market.swift in Sources */,
 				57FD69242B6CBECB00E57F96 /* MarketDataSource.swift in Sources */,
