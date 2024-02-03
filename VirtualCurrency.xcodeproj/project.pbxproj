@@ -16,6 +16,7 @@
 		5720B7762B68D50300F3BD36 /* VirtualCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7752B68D50300F3BD36 /* VirtualCurrencyTests.swift */; };
 		5720B7802B68D50300F3BD36 /* VirtualCurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B77F2B68D50300F3BD36 /* VirtualCurrencyUITests.swift */; };
 		5720B7822B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */; };
+		57573EBA2B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */; };
 		57E564102B68D959004DB0BF /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 57E5640F2B68D959004DB0BF /* .gitignore */; };
 		57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */; };
 		57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69132B6BA75900E57F96 /* NetworkBase.swift */; };
@@ -28,6 +29,7 @@
 		57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69332B6D0A1800E57F96 /* TickerRequest.swift */; };
 		57FD693C2B6E0A9E00E57F96 /* VirtualCurrency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */; };
 		57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69412B6E0FF600E57F96 /* NetworkError.swift */; };
+		57FD69442B6E152200E57F96 /* VirtualCurrencyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69432B6E152200E57F96 /* VirtualCurrencyRepository.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,7 @@
 		5720B77B2B68D50300F3BD36 /* VirtualCurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VirtualCurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5720B77F2B68D50300F3BD36 /* VirtualCurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyUITests.swift; sourceTree = "<group>"; };
 		5720B7812B68D50300F3BD36 /* VirtualCurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyRepositoryProtocol.swift; sourceTree = "<group>"; };
 		57E5640F2B68D959004DB0BF /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		57EDE2C32B6A2E9700F29E10 /* WebSocketManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketManager.swift; sourceTree = "<group>"; };
 		57FCD3A22B77CD6E006C22C5 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
@@ -73,6 +76,7 @@
 		57FD69332B6D0A1800E57F96 /* TickerRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TickerRequest.swift; sourceTree = "<group>"; };
 		57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrency.swift; sourceTree = "<group>"; };
 		57FD69412B6E0FF600E57F96 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		57FD69432B6E152200E57F96 /* VirtualCurrencyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyRepository.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
+		572D091E2B7BE62600451BB1 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		572D091F2B7BE69E00451BB1 /* Responses */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +191,14 @@
 				57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */,
 			);
 			path = Responses;
+			sourceTree = "<group>";
+		};
+		57573EB82B78B2E4007D66C7 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				572D091E2B7BE62600451BB1 /* Repositories */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 		57573EC12B78B38E007D66C7 /* Resource */ = {
@@ -192,6 +212,8 @@
 		57FD690C2B6B8B3400E57F96 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				57FD69252B6CC41000E57F96 /* Repositories */,
+				57FD69222B6CBEAF00E57F96 /* DataSources */,
 				57FD690D2B6B8B3E00E57F96 /* Network */,
 			);
 			path = Data;
@@ -228,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				57FD69202B6C307700E57F96 /* Entities */,
+				57573EB82B78B2E4007D66C7 /* Interfaces */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -249,6 +272,14 @@
 				57FD69282B6CC89000E57F96 /* TickerDataSource.swift */,
 			);
 			path = DataSources;
+			sourceTree = "<group>";
+		};
+		57FD69252B6CC41000E57F96 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				57FD69432B6E152200E57F96 /* VirtualCurrencyRepository.swift */,
+			);
+			path = Repositories;
 			sourceTree = "<group>";
 		};
 		57FD692A2B6CD36C00E57F96 /* Requests */ = {
@@ -407,11 +438,13 @@
 				5720B7672B68D4FD00F3BD36 /* ContentView.swift in Sources */,
 				57FD693C2B6E0A9E00E57F96 /* VirtualCurrency.swift in Sources */,
 				57FD69192B6BADD200E57F96 /* HTTPManager.swift in Sources */,
+				57FD69442B6E152200E57F96 /* VirtualCurrencyRepository.swift in Sources */,
 				57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */,
 				57FD691B2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift in Sources */,
 				570AAB882B7662E800239DB4 /* Market.swift in Sources */,
 				57FD69242B6CBECB00E57F96 /* MarketDataSource.swift in Sources */,
 				57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */,
+				57573EBA2B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift in Sources */,
 				5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */,
 				57FD69292B6CC89000E57F96 /* TickerDataSource.swift in Sources */,
 				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
