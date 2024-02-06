@@ -23,6 +23,7 @@
 		57573EB72B78AA37007D66C7 /* CandleInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EB62B78AA37007D66C7 /* CandleInteractor.swift */; };
 		57573EBA2B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */; };
 		57573EBC2B78B318007D66C7 /* CandleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EBB2B78B318007D66C7 /* CandleRepositoryProtocol.swift */; };
+		57573EC42B78B98C007D66C7 /* ReverseHorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */; };
 		57573ECA2B7A06ED007D66C7 /* DayCandleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC92B7A06ED007D66C7 /* DayCandleRequest.swift */; };
 		57573ECE2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573ECD2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift */; };
 		578FE8812B6F0D6800107830 /* ExchangeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FE8802B6F0D6800107830 /* ExchangeRow.swift */; };
@@ -91,6 +92,7 @@
 		57573EB62B78AA37007D66C7 /* CandleInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleInteractor.swift; sourceTree = "<group>"; };
 		57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyRepositoryProtocol.swift; sourceTree = "<group>"; };
 		57573EBB2B78B318007D66C7 /* CandleRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleRepositoryProtocol.swift; sourceTree = "<group>"; };
+		57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseHorizontalScrollView.swift; sourceTree = "<group>"; };
 		57573EC92B7A06ED007D66C7 /* DayCandleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCandleRequest.swift; sourceTree = "<group>"; };
 		57573ECD2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayCandleDTO+Mapping.swift"; sourceTree = "<group>"; };
 		578FE8802B6F0D6800107830 /* ExchangeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRow.swift; sourceTree = "<group>"; };
@@ -289,6 +291,14 @@
 				572D09192B7A086500451BB1 /* DayCandle.swift */,
 			);
 			path = Candle;
+			sourceTree = "<group>";
+		};
+		57EECCFD2B70816700C8BA77 /* Chart */ = {
+			isa = PBXGroup;
+			children = (
+				57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */,
+			);
+			path = Chart;
 			sourceTree = "<group>";
 		};
 		57FCD3872B7673FE006C22C5 /* Utility */ = {
@@ -606,6 +616,7 @@
 				57EECD032B70922700C8BA77 /* MinuteCandleDTO+Mapping.swift in Sources */,
 				570AAB722B733FC100239DB4 /* ViewModelable.swift in Sources */,
 				578FE8852B6F846C00107830 /* RealtimeTickerDTO+Mapping.swift in Sources */,
+				57573EC42B78B98C007D66C7 /* ReverseHorizontalScrollView.swift in Sources */,
 				57EECD072B70A8BC00C8BA77 /* CandleRepository.swift in Sources */,
 				57EECD052B70A6B100C8BA77 /* CandleDataSource.swift in Sources */,
 				57FD693E2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift in Sources */,
