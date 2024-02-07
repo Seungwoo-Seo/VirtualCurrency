@@ -28,4 +28,17 @@ final class DIContainer {
         )
     }
 
+    static func chartInject(virtualCurrency: VirtualCurrency) -> ChartViewModel {
+        let httpManager = HTTPManager.shared
+        let candleDataSource = CandleDataSource(httpManager: httpManager)
+        let candleRepository = CandleRepository(candleDataSource: candleDataSource)
+        let candleUseCase = CandleInteractor(repository: candleRepository)
+        let realtimeTickerInteractor = RealtimeTickerInteractor()
+
+        return ChartViewModel(
+            virtualCurrency: virtualCurrency,
+            candleUseCase: candleUseCase,
+            realtimeTickerInteractor: realtimeTickerInteractor
+        )
+    }
 }
