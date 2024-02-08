@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		570AAB722B733FC100239DB4 /* ViewModelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB712B733FC100239DB4 /* ViewModelable.swift */; };
+		570AAB802B76515B00239DB4 /* Trade.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB7F2B76515A00239DB4 /* Trade.swift */; };
 		570AAB822B76517600239DB4 /* Ticker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB812B76517600239DB4 /* Ticker.swift */; };
 		570AAB842B7651B400239DB4 /* MinuteCandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB832B7651B400239DB4 /* MinuteCandle.swift */; };
 		570AAB882B7662E800239DB4 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB872B7662E800239DB4 /* Market.swift */; };
@@ -29,6 +30,8 @@
 		57573ECE2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573ECD2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift */; };
 		578FE8812B6F0D6800107830 /* ExchangeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FE8802B6F0D6800107830 /* ExchangeRow.swift */; };
 		578FE8852B6F846C00107830 /* RealtimeTickerDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FE8842B6F846C00107830 /* RealtimeTickerDTO+Mapping.swift */; };
+		57E296552B71CDBE00B77D51 /* TradeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E296542B71CDBE00B77D51 /* TradeRequest.swift */; };
+		57E296592B71E5C200B77D51 /* TradeDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E296582B71E5C200B77D51 /* TradeDTO+Mapping.swift */; };
 		57E30A652B8370DA00CECF1F /* Double+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E30A642B8370D900CECF1F /* Double+Format.swift */; };
 		57E30A672B8377CA00CECF1F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E30A662B8377CA00CECF1F /* DIContainer.swift */; };
 		57E30A692B83784600CECF1F /* WebSocketUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E30A682B83784600CECF1F /* WebSocketUseCase.swift */; };
@@ -41,6 +44,7 @@
 		57EECD072B70A8BC00C8BA77 /* CandleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EECD062B70A8BC00C8BA77 /* CandleRepository.swift */; };
 		57EECD0B2B70AC8800C8BA77 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EECD0A2B70AC8800C8BA77 /* ChartViewModel.swift */; };
 		57FCD3922B776D67006C22C5 /* RealtimeTickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */; };
+		57FCD3962B776F4A006C22C5 /* RealtimeTradeDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3952B776F4A006C22C5 /* RealtimeTradeDTO+Mapping.swift */; };
 		57FD69122B6BA73800E57F96 /* QuotationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69112B6BA73800E57F96 /* QuotationRouter.swift */; };
 		57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FD69132B6BA75900E57F96 /* NetworkBase.swift */; };
 		57FD69172B6BAB7300E57F96 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 57FD69162B6BAB7300E57F96 /* Moya */; };
@@ -77,6 +81,7 @@
 
 /* Begin PBXFileReference section */
 		570AAB712B733FC100239DB4 /* ViewModelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModelable.swift; sourceTree = "<group>"; };
+		570AAB7F2B76515A00239DB4 /* Trade.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trade.swift; sourceTree = "<group>"; };
 		570AAB812B76517600239DB4 /* Ticker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ticker.swift; sourceTree = "<group>"; };
 		570AAB832B7651B400239DB4 /* MinuteCandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteCandle.swift; sourceTree = "<group>"; };
 		570AAB872B7662E800239DB4 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
@@ -101,6 +106,8 @@
 		57573ECD2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayCandleDTO+Mapping.swift"; sourceTree = "<group>"; };
 		578FE8802B6F0D6800107830 /* ExchangeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRow.swift; sourceTree = "<group>"; };
 		578FE8842B6F846C00107830 /* RealtimeTickerDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealtimeTickerDTO+Mapping.swift"; sourceTree = "<group>"; };
+		57E296542B71CDBE00B77D51 /* TradeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRequest.swift; sourceTree = "<group>"; };
+		57E296582B71E5C200B77D51 /* TradeDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TradeDTO+Mapping.swift"; sourceTree = "<group>"; };
 		57E30A642B8370D900CECF1F /* Double+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Format.swift"; sourceTree = "<group>"; };
 		57E30A662B8377CA00CECF1F /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		57E30A682B83784600CECF1F /* WebSocketUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketUseCase.swift; sourceTree = "<group>"; };
@@ -113,6 +120,7 @@
 		57EECD062B70A8BC00C8BA77 /* CandleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleRepository.swift; sourceTree = "<group>"; };
 		57EECD0A2B70AC8800C8BA77 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
 		57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeTickerInteractor.swift; sourceTree = "<group>"; };
+		57FCD3952B776F4A006C22C5 /* RealtimeTradeDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealtimeTradeDTO+Mapping.swift"; sourceTree = "<group>"; };
 		57FCD3A22B77CD6E006C22C5 /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 		57FD69112B6BA73800E57F96 /* QuotationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotationRouter.swift; sourceTree = "<group>"; };
 		57FD69132B6BA75900E57F96 /* NetworkBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkBase.swift; sourceTree = "<group>"; };
@@ -241,7 +249,9 @@
 			children = (
 				57FD691A2B6BB0DC00E57F96 /* MarketDTO+Mapping.swift */,
 				57573ECC2B7A07BF007D66C7 /* Candle */,
+				57E296582B71E5C200B77D51 /* TradeDTO+Mapping.swift */,
 				57FD691E2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift */,
+				57FCD38A2B768A66006C22C5 /* Realtime */,
 			);
 			path = Responses;
 			sourceTree = "<group>";
@@ -322,6 +332,7 @@
 			isa = PBXGroup;
 			children = (
 				578FE8842B6F846C00107830 /* RealtimeTickerDTO+Mapping.swift */,
+				57FCD3952B776F4A006C22C5 /* RealtimeTradeDTO+Mapping.swift */,
 			);
 			path = Realtime;
 			sourceTree = "<group>";
@@ -397,6 +408,7 @@
 				57FD693B2B6E0A9E00E57F96 /* VirtualCurrency.swift */,
 				570AAB872B7662E800239DB4 /* Market.swift */,
 				57573ECF2B7A0801007D66C7 /* Candle */,
+				570AAB7F2B76515A00239DB4 /* Trade.swift */,
 				570AAB812B76517600239DB4 /* Ticker.swift */,
 			);
 			path = Entities;
@@ -435,6 +447,7 @@
 			isa = PBXGroup;
 			children = (
 				57573ECB2B7A0705007D66C7 /* Candle */,
+				57E296542B71CDBE00B77D51 /* TradeRequest.swift */,
 				57FD69332B6D0A1800E57F96 /* TickerRequest.swift */,
 			);
 			path = Requests;
@@ -453,6 +466,7 @@
 			children = (
 				57FD69302B6CDAE100E57F96 /* Exchange */,
 				57EECCFD2B70816700C8BA77 /* Chart */,
+				57E296522B71CBA800B77D51 /* Trade */,
 				57FCD3872B7673FE006C22C5 /* Utility */,
 				57FCD38F2B769D63006C22C5 /* Extension+ */,
 			);
@@ -628,6 +642,7 @@
 				570AAB722B733FC100239DB4 /* ViewModelable.swift in Sources */,
 				578FE8852B6F846C00107830 /* RealtimeTickerDTO+Mapping.swift in Sources */,
 				57573EC42B78B98C007D66C7 /* ReverseHorizontalScrollView.swift in Sources */,
+				57FCD3962B776F4A006C22C5 /* RealtimeTradeDTO+Mapping.swift in Sources */,
 				57EECD072B70A8BC00C8BA77 /* CandleRepository.swift in Sources */,
 				57EECD052B70A6B100C8BA77 /* CandleDataSource.swift in Sources */,
 				57FD693E2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift in Sources */,
@@ -645,14 +660,17 @@
 				57FD69292B6CC89000E57F96 /* TickerDataSource.swift in Sources */,
 				57FCD3922B776D67006C22C5 /* RealtimeTickerInteractor.swift in Sources */,
 				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
+				570AAB802B76515B00239DB4 /* Trade.swift in Sources */,
 				57FD69122B6BA73800E57F96 /* QuotationRouter.swift in Sources */,
 				57E30A692B83784600CECF1F /* WebSocketUseCase.swift in Sources */,
 				57EECD0B2B70AC8800C8BA77 /* ChartViewModel.swift in Sources */,
 				57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */,
+				57E296552B71CDBE00B77D51 /* TradeRequest.swift in Sources */,
 				57573ECA2B7A06ED007D66C7 /* DayCandleRequest.swift in Sources */,
 				570AAB842B7651B400239DB4 /* MinuteCandle.swift in Sources */,
 				57FD69382B6E0A5600E57F96 /* ExchangeView.swift in Sources */,
 				57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */,
+				57E296592B71E5C200B77D51 /* TradeDTO+Mapping.swift in Sources */,
 				570AAB822B76517600239DB4 /* Ticker.swift in Sources */,
 				572D091C2B7A5F2300451BB1 /* String+Format.swift in Sources */,
 				57573EBC2B78B318007D66C7 /* CandleRepositoryProtocol.swift in Sources */,
