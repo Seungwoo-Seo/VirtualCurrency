@@ -41,4 +41,18 @@ final class DIContainer {
             realtimeTickerInteractor: realtimeTickerInteractor
         )
     }
+
+    static func tradeInject(virtualCurrency: VirtualCurrency) -> TradeViewModel {
+        let httpManager = HTTPManager.shared
+        let tradeDataSource = TradeDataSource(httpManager: httpManager)
+        let tradeRepository = TradeRepository(tradeDataSource: tradeDataSource)
+        let tradeUseCase = TradeInteractor(repository: tradeRepository)
+        let realtimeTradeInteractor = RealtimeTradeInteractor()
+
+        return TradeViewModel(
+            virtualCurrency: virtualCurrency,
+            tradesUseCase: tradeUseCase,
+            realtimeTradeInteractor: realtimeTradeInteractor
+        )
+    }
 }

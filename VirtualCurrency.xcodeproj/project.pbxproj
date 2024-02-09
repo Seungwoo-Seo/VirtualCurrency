@@ -36,6 +36,9 @@
 		57E296592B71E5C200B77D51 /* TradeDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E296582B71E5C200B77D51 /* TradeDTO+Mapping.swift */; };
 		57E2965B2B71E96000B77D51 /* TradeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2965A2B71E96000B77D51 /* TradeRepository.swift */; };
 		57E2965D2B71EA4900B77D51 /* TradeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2965C2B71EA4900B77D51 /* TradeInteractor.swift */; };
+		57E2965F2B71EBBC00B77D51 /* TradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E2965E2B71EBBC00B77D51 /* TradeView.swift */; };
+		57E296612B71EBC600B77D51 /* TradeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E296602B71EBC600B77D51 /* TradeViewModel.swift */; };
+		57E296632B71ED7100B77D51 /* TradeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E296622B71ED7100B77D51 /* TradeRow.swift */; };
 		57E30A652B8370DA00CECF1F /* Double+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E30A642B8370D900CECF1F /* Double+Format.swift */; };
 		57E30A672B8377CA00CECF1F /* DIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E30A662B8377CA00CECF1F /* DIContainer.swift */; };
 		57E30A692B83784600CECF1F /* WebSocketUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E30A682B83784600CECF1F /* WebSocketUseCase.swift */; };
@@ -117,6 +120,9 @@
 		57E296582B71E5C200B77D51 /* TradeDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TradeDTO+Mapping.swift"; sourceTree = "<group>"; };
 		57E2965A2B71E96000B77D51 /* TradeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRepository.swift; sourceTree = "<group>"; };
 		57E2965C2B71EA4900B77D51 /* TradeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeInteractor.swift; sourceTree = "<group>"; };
+		57E2965E2B71EBBC00B77D51 /* TradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeView.swift; sourceTree = "<group>"; };
+		57E296602B71EBC600B77D51 /* TradeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeViewModel.swift; sourceTree = "<group>"; };
+		57E296622B71ED7100B77D51 /* TradeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRow.swift; sourceTree = "<group>"; };
 		57E30A642B8370D900CECF1F /* Double+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+Format.swift"; sourceTree = "<group>"; };
 		57E30A662B8377CA00CECF1F /* DIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIContainer.swift; sourceTree = "<group>"; };
 		57E30A682B83784600CECF1F /* WebSocketUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketUseCase.swift; sourceTree = "<group>"; };
@@ -318,6 +324,16 @@
 				572D09192B7A086500451BB1 /* DayCandle.swift */,
 			);
 			path = Candle;
+			sourceTree = "<group>";
+		};
+		57E296522B71CBA800B77D51 /* Trade */ = {
+			isa = PBXGroup;
+			children = (
+				57E2965E2B71EBBC00B77D51 /* TradeView.swift */,
+				57E296622B71ED7100B77D51 /* TradeRow.swift */,
+				57E296602B71EBC600B77D51 /* TradeViewModel.swift */,
+			);
+			path = Trade;
 			sourceTree = "<group>";
 		};
 		57EECCFD2B70816700C8BA77 /* Chart */ = {
@@ -652,6 +668,7 @@
 				57FD69442B6E152200E57F96 /* VirtualCurrencyRepository.swift in Sources */,
 				57EECCFF2B70819200C8BA77 /* ChartView.swift in Sources */,
 				57E2965D2B71EA4900B77D51 /* TradeInteractor.swift in Sources */,
+				57E2965F2B71EBBC00B77D51 /* TradeView.swift in Sources */,
 				572D091A2B7A086500451BB1 /* DayCandle.swift in Sources */,
 				57FD69342B6D0A1800E57F96 /* TickerRequest.swift in Sources */,
 				57EECD032B70922700C8BA77 /* MinuteCandleDTO+Mapping.swift in Sources */,
@@ -659,6 +676,7 @@
 				57FCD3942B776DC5006C22C5 /* RealtimeTradeInteractor.swift in Sources */,
 				578FE8852B6F846C00107830 /* RealtimeTickerDTO+Mapping.swift in Sources */,
 				57573EC42B78B98C007D66C7 /* ReverseHorizontalScrollView.swift in Sources */,
+				57E296632B71ED7100B77D51 /* TradeRow.swift in Sources */,
 				57FCD3962B776F4A006C22C5 /* RealtimeTradeDTO+Mapping.swift in Sources */,
 				57E2965B2B71E96000B77D51 /* TradeRepository.swift in Sources */,
 				57EECD072B70A8BC00C8BA77 /* CandleRepository.swift in Sources */,
@@ -680,6 +698,7 @@
 				57FD69142B6BA75900E57F96 /* NetworkBase.swift in Sources */,
 				57E296572B71E58B00B77D51 /* TradeDataSource.swift in Sources */,
 				570AAB802B76515B00239DB4 /* Trade.swift in Sources */,
+				57E296612B71EBC600B77D51 /* TradeViewModel.swift in Sources */,
 				57FD69122B6BA73800E57F96 /* QuotationRouter.swift in Sources */,
 				57E30A692B83784600CECF1F /* WebSocketUseCase.swift in Sources */,
 				57EECD0B2B70AC8800C8BA77 /* ChartViewModel.swift in Sources */,
@@ -687,6 +706,7 @@
 				57FD69422B6E0FF600E57F96 /* NetworkError.swift in Sources */,
 				57E296552B71CDBE00B77D51 /* TradeRequest.swift in Sources */,
 				57573ECA2B7A06ED007D66C7 /* DayCandleRequest.swift in Sources */,
+				57573EC82B78C59B007D66C7 /* TradeVolumeRow.swift in Sources */,
 				570AAB842B7651B400239DB4 /* MinuteCandle.swift in Sources */,
 				57FD69382B6E0A5600E57F96 /* ExchangeView.swift in Sources */,
 				57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */,
