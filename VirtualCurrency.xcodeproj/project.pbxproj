@@ -26,6 +26,7 @@
 		57573EBA2B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */; };
 		57573EBC2B78B318007D66C7 /* CandleRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EBB2B78B318007D66C7 /* CandleRepositoryProtocol.swift */; };
 		57573EBE2B78B32E007D66C7 /* TradeRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EBD2B78B32E007D66C7 /* TradeRepositoryProtocol.swift */; };
+		57573EC02B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EBF2B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift */; };
 		57573EC42B78B98C007D66C7 /* ReverseHorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */; };
 		57573EC62B78C1D0007D66C7 /* CandleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC52B78C1D0007D66C7 /* CandleRow.swift */; };
 		57573ECA2B7A06ED007D66C7 /* DayCandleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC92B7A06ED007D66C7 /* DayCandleRequest.swift */; };
@@ -51,8 +52,12 @@
 		57EECD052B70A6B100C8BA77 /* CandleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EECD042B70A6B100C8BA77 /* CandleDataSource.swift */; };
 		57EECD072B70A8BC00C8BA77 /* CandleRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EECD062B70A8BC00C8BA77 /* CandleRepository.swift */; };
 		57EECD0B2B70AC8800C8BA77 /* ChartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57EECD0A2B70AC8800C8BA77 /* ChartViewModel.swift */; };
+		57FCD3802B766A3E006C22C5 /* OrderbookDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD37F2B766A3E006C22C5 /* OrderbookDataSource.swift */; };
 		57FCD3822B766AD7006C22C5 /* OrderbookDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3812B766AD7006C22C5 /* OrderbookDTO+Mapping.swift */; };
+		57FCD3842B766D93006C22C5 /* OrderbookRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3832B766D93006C22C5 /* OrderbookRepository.swift */; };
 		57FCD3862B767370006C22C5 /* Orderbook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3852B767370006C22C5 /* Orderbook.swift */; };
+		57FCD3892B767755006C22C5 /* OrderbookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3882B767755006C22C5 /* OrderbookInteractor.swift */; };
+		57FCD38C2B768DCD006C22C5 /* RealtimeOrderbookInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD38B2B768DCD006C22C5 /* RealtimeOrderbookInteractor.swift */; };
 		57FCD38E2B7695B6006C22C5 /* RealtimeOrderbookDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD38D2B7695B6006C22C5 /* RealtimeOrderbookDTO+Mapping.swift */; };
 		57FCD3922B776D67006C22C5 /* RealtimeTickerInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */; };
 		57FCD3942B776DC5006C22C5 /* RealtimeTradeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCD3932B776DC5006C22C5 /* RealtimeTradeInteractor.swift */; };
@@ -114,6 +119,7 @@
 		57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyRepositoryProtocol.swift; sourceTree = "<group>"; };
 		57573EBB2B78B318007D66C7 /* CandleRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleRepositoryProtocol.swift; sourceTree = "<group>"; };
 		57573EBD2B78B32E007D66C7 /* TradeRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeRepositoryProtocol.swift; sourceTree = "<group>"; };
+		57573EBF2B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookRepositoryProtocol.swift; sourceTree = "<group>"; };
 		57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseHorizontalScrollView.swift; sourceTree = "<group>"; };
 		57573EC52B78C1D0007D66C7 /* CandleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleRow.swift; sourceTree = "<group>"; };
 		57573EC92B7A06ED007D66C7 /* DayCandleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCandleRequest.swift; sourceTree = "<group>"; };
@@ -139,8 +145,12 @@
 		57EECD042B70A6B100C8BA77 /* CandleDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleDataSource.swift; sourceTree = "<group>"; };
 		57EECD062B70A8BC00C8BA77 /* CandleRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleRepository.swift; sourceTree = "<group>"; };
 		57EECD0A2B70AC8800C8BA77 /* ChartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewModel.swift; sourceTree = "<group>"; };
+		57FCD37F2B766A3E006C22C5 /* OrderbookDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookDataSource.swift; sourceTree = "<group>"; };
 		57FCD3812B766AD7006C22C5 /* OrderbookDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "OrderbookDTO+Mapping.swift"; sourceTree = "<group>"; };
+		57FCD3832B766D93006C22C5 /* OrderbookRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookRepository.swift; sourceTree = "<group>"; };
 		57FCD3852B767370006C22C5 /* Orderbook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Orderbook.swift; sourceTree = "<group>"; };
+		57FCD3882B767755006C22C5 /* OrderbookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookInteractor.swift; sourceTree = "<group>"; };
+		57FCD38B2B768DCD006C22C5 /* RealtimeOrderbookInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeOrderbookInteractor.swift; sourceTree = "<group>"; };
 		57FCD38D2B7695B6006C22C5 /* RealtimeOrderbookDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RealtimeOrderbookDTO+Mapping.swift"; sourceTree = "<group>"; };
 		57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeTickerInteractor.swift; sourceTree = "<group>"; };
 		57FCD3932B776DC5006C22C5 /* RealtimeTradeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeTradeInteractor.swift; sourceTree = "<group>"; };
@@ -265,6 +275,7 @@
 				57573EB92B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift */,
 				57573EBB2B78B318007D66C7 /* CandleRepositoryProtocol.swift */,
 				57573EBD2B78B32E007D66C7 /* TradeRepositoryProtocol.swift */,
+				57573EBF2B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -389,6 +400,7 @@
 				57E30A682B83784600CECF1F /* WebSocketUseCase.swift */,
 				57FCD3912B776D67006C22C5 /* RealtimeTickerInteractor.swift */,
 				57FCD3932B776DC5006C22C5 /* RealtimeTradeInteractor.swift */,
+				57FCD38B2B768DCD006C22C5 /* RealtimeOrderbookInteractor.swift */,
 			);
 			path = RealtimeUseCase;
 			sourceTree = "<group>";
@@ -459,6 +471,7 @@
 				57E2965C2B71EA4900B77D51 /* TradeInteractor.swift */,
 				57573EB62B78AA37007D66C7 /* CandleInteractor.swift */,
 				57FD693D2B6E0DA300E57F96 /* VirtualCurrencyInteractor.swift */,
+				57FCD3882B767755006C22C5 /* OrderbookInteractor.swift */,
 				57FCD3902B76B343006C22C5 /* RealtimeUseCase */,
 			);
 			path = UseCases;
@@ -471,6 +484,7 @@
 				57EECD042B70A6B100C8BA77 /* CandleDataSource.swift */,
 				57E296562B71E58B00B77D51 /* TradeDataSource.swift */,
 				57FD69282B6CC89000E57F96 /* TickerDataSource.swift */,
+				57FCD37F2B766A3E006C22C5 /* OrderbookDataSource.swift */,
 			);
 			path = DataSources;
 			sourceTree = "<group>";
@@ -481,6 +495,7 @@
 				57FD69432B6E152200E57F96 /* VirtualCurrencyRepository.swift */,
 				57EECD062B70A8BC00C8BA77 /* CandleRepository.swift */,
 				57E2965A2B71E96000B77D51 /* TradeRepository.swift */,
+				57FCD3832B766D93006C22C5 /* OrderbookRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -673,7 +688,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5720B7672B68D4FD00F3BD36 /* ContentView.swift in Sources */,
+				57FCD38C2B768DCD006C22C5 /* RealtimeOrderbookInteractor.swift in Sources */,
 				57FD693A2B6E0A6700E57F96 /* ExchangeViewModel.swift in Sources */,
+				57573EC02B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift in Sources */,
 				57FD693C2B6E0A9E00E57F96 /* VirtualCurrency.swift in Sources */,
 				570AAB862B7652E600239DB4 /* OrderbookRequest.swift in Sources */,
 				57573EB72B78AA37007D66C7 /* CandleInteractor.swift in Sources */,
@@ -706,6 +723,7 @@
 				57FD691F2B6BCA1E00E57F96 /* TickerDTO+Mapping.swift in Sources */,
 				57573EBA2B78B302007D66C7 /* VirtualCurrencyRepositoryProtocol.swift in Sources */,
 				57FCD3822B766AD7006C22C5 /* OrderbookDTO+Mapping.swift in Sources */,
+				57FCD3802B766A3E006C22C5 /* OrderbookDataSource.swift in Sources */,
 				57EECD012B708F7B00C8BA77 /* MinuteCandleRequest.swift in Sources */,
 				578FE8812B6F0D6800107830 /* ExchangeRow.swift in Sources */,
 				5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */,
@@ -717,6 +735,7 @@
 				57FCD38E2B7695B6006C22C5 /* RealtimeOrderbookDTO+Mapping.swift in Sources */,
 				57E296612B71EBC600B77D51 /* TradeViewModel.swift in Sources */,
 				57FD69122B6BA73800E57F96 /* QuotationRouter.swift in Sources */,
+				57FCD3842B766D93006C22C5 /* OrderbookRepository.swift in Sources */,
 				57E30A692B83784600CECF1F /* WebSocketUseCase.swift in Sources */,
 				57EECD0B2B70AC8800C8BA77 /* ChartViewModel.swift in Sources */,
 				57573EBE2B78B32E007D66C7 /* TradeRepositoryProtocol.swift in Sources */,
@@ -725,6 +744,7 @@
 				57573ECA2B7A06ED007D66C7 /* DayCandleRequest.swift in Sources */,
 				57573EC82B78C59B007D66C7 /* TradeVolumeRow.swift in Sources */,
 				570AAB842B7651B400239DB4 /* MinuteCandle.swift in Sources */,
+				57FCD3892B767755006C22C5 /* OrderbookInteractor.swift in Sources */,
 				57FD69382B6E0A5600E57F96 /* ExchangeView.swift in Sources */,
 				57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */,
 				57E296592B71E5C200B77D51 /* TradeDTO+Mapping.swift in Sources */,
