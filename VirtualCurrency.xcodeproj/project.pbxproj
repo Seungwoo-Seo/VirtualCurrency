@@ -31,6 +31,7 @@
 		57573EC02B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EBF2B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift */; };
 		57573EC42B78B98C007D66C7 /* ReverseHorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */; };
 		57573EC62B78C1D0007D66C7 /* CandleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC52B78C1D0007D66C7 /* CandleRow.swift */; };
+		57573EC82B78C59B007D66C7 /* TradeVolumeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC72B78C59B007D66C7 /* TradeVolumeRow.swift */; };
 		57573ECA2B7A06ED007D66C7 /* DayCandleRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573EC92B7A06ED007D66C7 /* DayCandleRequest.swift */; };
 		57573ECE2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57573ECD2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift */; };
 		578FE8812B6F0D6800107830 /* ExchangeRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 578FE8802B6F0D6800107830 /* ExchangeRow.swift */; };
@@ -126,6 +127,7 @@
 		57573EBF2B78B33C007D66C7 /* OrderbookRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookRepositoryProtocol.swift; sourceTree = "<group>"; };
 		57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReverseHorizontalScrollView.swift; sourceTree = "<group>"; };
 		57573EC52B78C1D0007D66C7 /* CandleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandleRow.swift; sourceTree = "<group>"; };
+		57573EC72B78C59B007D66C7 /* TradeVolumeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeVolumeRow.swift; sourceTree = "<group>"; };
 		57573EC92B7A06ED007D66C7 /* DayCandleRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayCandleRequest.swift; sourceTree = "<group>"; };
 		57573ECD2B7A07D1007D66C7 /* DayCandleDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DayCandleDTO+Mapping.swift"; sourceTree = "<group>"; };
 		578FE8802B6F0D6800107830 /* ExchangeRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRow.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 				57EECCFE2B70819200C8BA77 /* ChartView.swift */,
 				57EECD0A2B70AC8800C8BA77 /* ChartViewModel.swift */,
 				57573EC52B78C1D0007D66C7 /* CandleRow.swift */,
+				57573EC72B78C59B007D66C7 /* TradeVolumeRow.swift */,
 				57573EC32B78B98C007D66C7 /* ReverseHorizontalScrollView.swift */,
 			);
 			path = Chart;
