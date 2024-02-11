@@ -55,4 +55,26 @@ final class DIContainer {
             realtimeTradeInteractor: realtimeTradeInteractor
         )
     }
+
+    static func orderbookInject(virtualCurrency: VirtualCurrency) -> OrderbookViewModel {
+        let httpManager = HTTPManager.shared
+        let orderbookDataSource = OrderbookDataSource(httpManager: httpManager)
+        let orderbookRepository = OrderbookRepository(orderbookDataSource: orderbookDataSource)
+        let orderbookUseCase = OrderbookInteractor(repository: orderbookRepository)
+        let tradeDataSource = TradeDataSource(httpManager: httpManager)
+        let tradeRepository = TradeRepository(tradeDataSource: tradeDataSource)
+        let tradeUseCase = TradeInteractor(repository: tradeRepository)
+        let realtimeOrderbookInteractor = RealtimeOrderbookInteractor()
+        let realtimeTradeInteractor = RealtimeTradeInteractor()
+        let realtimeTickerInteractor = RealtimeTickerInteractor()
+
+        return OrderbookViewModel(
+            virtualCurrency: virtualCurrency,
+            orderbookUseCase: orderbookUseCase,
+            tradesUseCase: tradeUseCase,
+            realtimeOrderbookInteractor: realtimeOrderbookInteractor,
+            realtimeTradeInteractor: realtimeTradeInteractor,
+            realtimeTickerInteractor: realtimeTickerInteractor
+        )
+    }
 }

@@ -13,6 +13,8 @@
 		570AAB842B7651B400239DB4 /* MinuteCandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB832B7651B400239DB4 /* MinuteCandle.swift */; };
 		570AAB862B7652E600239DB4 /* OrderbookRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB852B7652E600239DB4 /* OrderbookRequest.swift */; };
 		570AAB882B7662E800239DB4 /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB872B7662E800239DB4 /* Market.swift */; };
+		570AAB8A2B7663B500239DB4 /* OrderbookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB892B7663B500239DB4 /* OrderbookView.swift */; };
+		570AAB8C2B7663CC00239DB4 /* OrderbookViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 570AAB8B2B7663CC00239DB4 /* OrderbookViewModel.swift */; };
 		5720B7652B68D4FD00F3BD36 /* VirtualCurrencyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7642B68D4FD00F3BD36 /* VirtualCurrencyApp.swift */; };
 		5720B7672B68D4FD00F3BD36 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5720B7662B68D4FD00F3BD36 /* ContentView.swift */; };
 		5720B7692B68D50200F3BD36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5720B7682B68D50200F3BD36 /* Assets.xcassets */; };
@@ -103,6 +105,8 @@
 		570AAB832B7651B400239DB4 /* MinuteCandle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinuteCandle.swift; sourceTree = "<group>"; };
 		570AAB852B7652E600239DB4 /* OrderbookRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookRequest.swift; sourceTree = "<group>"; };
 		570AAB872B7662E800239DB4 /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		570AAB892B7663B500239DB4 /* OrderbookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookView.swift; sourceTree = "<group>"; };
+		570AAB8B2B7663CC00239DB4 /* OrderbookViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderbookViewModel.swift; sourceTree = "<group>"; };
 		5720B7612B68D4FD00F3BD36 /* VirtualCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5720B7642B68D4FD00F3BD36 /* VirtualCurrencyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VirtualCurrencyApp.swift; sourceTree = "<group>"; };
 		5720B7662B68D4FD00F3BD36 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -354,6 +358,15 @@
 				57E296602B71EBC600B77D51 /* TradeViewModel.swift */,
 			);
 			path = Trade;
+			sourceTree = "<group>";
+		};
+		57E296532B71CBB700B77D51 /* Orderbook */ = {
+			isa = PBXGroup;
+			children = (
+				570AAB892B7663B500239DB4 /* OrderbookView.swift */,
+				570AAB8B2B7663CC00239DB4 /* OrderbookViewModel.swift */,
+			);
+			path = Orderbook;
 			sourceTree = "<group>";
 		};
 		57EECCFD2B70816700C8BA77 /* Chart */ = {
@@ -745,6 +758,7 @@
 				57573EC82B78C59B007D66C7 /* TradeVolumeRow.swift in Sources */,
 				570AAB842B7651B400239DB4 /* MinuteCandle.swift in Sources */,
 				57FCD3892B767755006C22C5 /* OrderbookInteractor.swift in Sources */,
+				570AAB8C2B7663CC00239DB4 /* OrderbookViewModel.swift in Sources */,
 				57FD69382B6E0A5600E57F96 /* ExchangeView.swift in Sources */,
 				57EDE2C42B6A2E9700F29E10 /* WebSocketManager.swift in Sources */,
 				57E296592B71E5C200B77D51 /* TradeDTO+Mapping.swift in Sources */,
