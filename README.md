@@ -54,3 +54,75 @@
 
 <!-- 프로젝트 중 발생한 문제와 그 해결 방법에 대한 내용을 기록한다. -->
 
+### 1. 차트 Scene에서 체결 Scene으로 push 할 때 이전 차트 Scene이 계속 push 되는 이슈
+- **문제 상황**</br>
+<img src="https://github.com/Seungwoo-Seo/LSLPTodogram/assets/72753868/790eb953-2d6c-4f98-a963-bb8297aa1f77" width="130">
+
+거래소 화면에서 차트 화면으로 push할 때
+~~~swift
+// 거래소 Scene
+
+NavigationLink(value: item) {
+		ExchangeRow(virtualCurrency: item)
+}
+
+...
+
+.navigationDestination(for: VirtualCurrency.self) { item in
+    let viewModel = ChartViewModel(virtualCurrency: item)
+		ChartView(viewModel: viewModel)
+}
+~~~
+
+차트 화면에서 체결 화면으로 push 할 때
+~~~swift
+// 차트 Scene
+
+.toolbar {
+    ToolbarItem(placement: .navigationBarTrailing) {
+        NavigationLink("체결", value: viewModel.virtualCurrency)
+    }
+}
+.navigationDestination(for: VirtualCurrency.self) { item in
+    let viewModel = TradeViewModel(virtualCurrency: item)
+    TradeView(viewModel: viewModel)
+}
+~~~
+
+- **문제 원인**</br>
+VirtualCurrency 타입에 대한 중복된 navigationDestination modifier를 사용한 것이 원인
+
+- **해결 방법**</br>
+navigationDestination modifier를 사용하지 않고 NavigationLink만 사용해서 해결
+
+거래소 화면에서 차트 화면으로 push할 때
+~~~swift
+// 거래소 Scene
+
+NavigationLink {
+    ChartView(viewModel: DIContainer.chartInject(virtualCurrency: item))
+} label: {
+    EmptyView()
+}
+.opacity(0)
+ExchangeRow(virtualCurrency: item, diffItem: viewModel.diffItem)
+~~~
+
+차트 화면에서 체결 화면으로 push 할 때
+~~~swift
+// 차트 Scene
+
+.toolbar {
+    ToolbarItem(placement: .navigationBarTrailing) {
+        NavigationLink {
+            TradeView(viewModel: DIContainer.tradeInject(virtualCurrency: viewModel.virtualCurrency))
+        } label: {
+            Text("체결")
+        }
+    }
+}
+~~~
+
+## 📝 회고
+- 클린 아키텍처를 적용하면서 관심사에 따라 코드를 명확하게 분리하니 유지보수하기도 좋았고 개발 생산성이 더 빨라진 것을 경험
+- SwiftUI가 확실히 빠르게 UI를 만들 수 있었지만 세밀한 부분까지 작업하기엔 아직 까다롭다는 것을 경험
