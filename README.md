@@ -40,13 +40,13 @@
 ## 💻 핵심 설명
 
 - 관심사의 분리(SoC)를 통해 layer 분리, layer 간의 의존성 규칙(Dependency Rule) 준수
-- SwiftUI + MVVM 구조 기반 Action/State Pattern 적용
-- cursor 기반 페이지네이션 을 통해 이전 캔들(봉), 거래량, 체결 정보 표현
-- Combine 을 사용해 View 비동기 이벤트, UseCase 결과 비동기 처리
-- Moya 기반 Generic request 메소드 구현, MoyaProvider request 를 Continuation 으로 랩핑해 async/await 적용
-- URLSessionWebSocketTask 기반  WebSocket 프로토콜 통신 으로 실시간 데이터 조회
+- SwiftUI + MVVM 구조 기반 `Action/State Pattern` 적용
+- cursor 기반 `페이지 네이션`을 통해 이전 캔들(봉), 거래량, 체결 정보 표현
+- Combine을 사용해 View 비동기 이벤트, UseCase 결과 `비동기 처리`
+- Moya 기반 Generic request 메소드 구현, MoyaProvider request를 Continuation으로 랩핑해 `async/await` 적용
+- URLSessionWebSocketTask 기반 `WebSocket 프로토콜 통신`으로 `실시간 데이터 조회`
 - 캔들(봉), 거래량, 이동평균선 Charts 활용 구현
-- ScrollViewReader, GeometryReader, PreferenceKey를 활용한 Reverse Horizontal Scrollable Chart 구현
+- ScrollViewReader, GeometryReader, PreferenceKey를 활용한 `Reverse Horizontal Scrollable Chart` 구현
 - ScrollView + HStack + LazyVStack 를 통한 호가 화면 구현
 
 
@@ -124,5 +124,5 @@ ExchangeRow(virtualCurrency: item, diffItem: viewModel.diffItem)
 ~~~
 
 ## 📝 회고
-- 클린 아키텍처를 적용하면서 관심사에 따라 코드를 명확하게 분리하니 유지보수하기도 좋았고 개발 생산성이 더 빨라진 것을 경험
+- 클린 아키텍처를 적용하면서 관심사에 따라 코드를 명확하게 분리하니 유지 보수하기도 편했고 개발 생산성이 더 빨라진 것을 경험
 - SwiftUI가 확실히 빠르게 UI를 만들 수 있었지만 세밀한 부분까지 작업하기엔 아직 까다롭다는 것을 경험
