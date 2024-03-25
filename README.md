@@ -32,7 +32,7 @@
 ## 🛠 사용 기술
 
 - Swift
-- Foundation, SwiftUI, Combine, Charts 
+- SwiftUI, Combine, Charts 
 - Clean Architecture, MVVM, Action/State Pattern, Repository Pattern, Router Pattern, Singleton
 - Moya
 - Async/await, Continuation, URLSessionWebSocketTask
