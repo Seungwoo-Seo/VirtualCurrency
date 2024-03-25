@@ -39,15 +39,14 @@
 
 ## 💻 핵심 설명
 
-- 관심사의 분리(SoC)를 통해 layer 분리, layer 간의 의존성 규칙(Dependency Rule) 준수
+- 관심사의 분리(SoC)를 통해 layer 분리, layer 간의 `의존성 규칙`(Dependency Rule) 준수
 - SwiftUI + MVVM 구조 기반 `Action/State Pattern` 적용
 - cursor 기반 `페이지 네이션`을 통해 이전 캔들(봉), 거래량, 체결 정보 표현
-- Combine을 사용해 View 비동기 이벤트, UseCase 결과 `비동기 처리`
-- Moya 기반 Generic request 메소드 구현, MoyaProvider request를 Continuation으로 랩핑해 `async/await` 적용
-- URLSessionWebSocketTask 기반 `WebSocket 프로토콜 통신`으로 `실시간 데이터 조회`
-- 캔들(봉), 거래량, 이동평균선 Charts 활용 구현
+- Combine 기반 `데이터 바인딩` 및 `비동기 통신로직` 처리
+- Moya 기반 `Generic request 메서드` 구현, MoyaProvider request를 Continuation으로 랩핑해 `async/await` 적용
+- URLSessionWebSocketTask 기반 `WebSocket 프로토콜 통신`으로 `실시간 데이터` 조회
+- 캔들(봉), 거래량, 이동평균선 `Charts` 활용 구현
 - ScrollViewReader, GeometryReader, PreferenceKey를 활용한 `Reverse Horizontal Scrollable Chart` 구현
-- ScrollView + HStack + LazyVStack 를 통한 호가 화면 구현
 
 
 ## 🚨 트러블 슈팅
